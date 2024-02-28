@@ -1,0 +1,13 @@
+nohup python -u main.py \
+    --gpu 2 \
+    --classes_num 2 \
+    --epochs 6 \
+    --dataset QQP \
+    --sub_dataset PAWS \
+    --lr 2e-5 \
+    --loss2weight 1 \
+    --z_split_first_size 4 \
+    --ae_z_size 64 \
+    --theta 0.6 \
+    --predout 423QQPfinal \
+    --seed 111 > MyResults/423QQPfinal.log 2>&1 &

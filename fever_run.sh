@@ -1,0 +1,13 @@
+nohup python -u main.py \
+    --gpu 1 \
+    --classes_num 3 \
+    --epochs 6 \
+    --dataset FEVER \
+    --sub_dataset SYMM \
+    --lr 2e-5 \
+    --loss2weight 1 \
+    --z_split_first_size 4 \
+    --ae_z_size 80 \
+    --theta 0.6 \
+    --predout 424FEVER551 \
+    --seed 111 > MyResults/424FEVER551.log 2>&1 &
